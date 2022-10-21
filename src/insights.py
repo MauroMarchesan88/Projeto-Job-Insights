@@ -15,27 +15,14 @@ def get_unique_job_types(path):
 
 
 def filter_by_job_type(jobs, job_type):
-    """Filters a list of jobs by job_type
 
-    Parameters
-    ----------
-    jobs : list
-        List of jobs to be filtered
-    job_type : str
-        Job type for the list filter
-
-    Returns
-    -------
-    list
-        List of jobs with provided job_type
-    """
     list_of_jobs = []
 
     for job in jobs:
         if job["job_type"] == job_type and job["job_type"] not in list_of_jobs:
             list_of_jobs.append(job)
 
-    return []
+    return list_of_jobs
 
 
 def get_unique_industries(path):
