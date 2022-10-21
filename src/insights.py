@@ -39,13 +39,13 @@ def get_unique_industries(path):
 
 
 def filter_by_industry(jobs, industry):
-    list_of_industries = []
+    list_industr = []
 
     for job in jobs:
-        if job["industry"] == industry and job["industry"] not in list_of_industries:
-            list_of_industries.append(job)
+        if job["industry"] == industry and job["industry"] not in list_industr:
+            list_industr.append(job)
 
-    return list_of_industries
+    return list_industr
 
 
 def get_max_salary(path):
